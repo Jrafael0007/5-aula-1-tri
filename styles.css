@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #11528be7;
+    color: #2e2c2c;
+    transition: all 0.3s ease;
+}
+
+header {
+    background: linear-gradient(135deg, #2d4484 0%, #6087d6 100%);
+    color: rgb(22, 42, 139);
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+nav {
+    background-color: #1a3a7a;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: rgb(129, 124, 124);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #1a053c;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.member-card {
+    background-color: rgb(184, 188, 196);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+}
+
+.member-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.discography {
+    margin: 3rem 0;
+}
+
+.album {
+    display: flex;
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.album-info {
+    padding: 1rem 2rem;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+/* Acessibilidade */
+.accessibility-bar {
+    background-color: #222;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.accessibility-btn {
+    background-color: #0e0563;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.accessibility-btn:hover {
+    background-color: #506ebb;
+}
+
+/* Modo alto contraste */
+.high-contrast {
+    background-color: black !important;
+    color: rgb(47, 206, 19) !important;
+}
+
+.high-contrast header,
+.high-contrast nav,
+.high-contrast footer {
+    background-color: black !important;
+    color: rgb(5, 58, 11) !important;
+    border: 2px solid rgb(33, 216, 42);
+}
+
+.high-contrast .member-card,
+.high-contrast .album {
+    background-color: black !important;
+    color: rgb(47, 153, 18) !important;
+    border: 2px solid rgb(20, 195, 32);
+}
+
+.high-contrast a {
+    color: rgb(10, 183, 15) !important;
+}
